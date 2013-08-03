@@ -22,7 +22,7 @@
     'repository' => 'weistreet_api',
     'branch' => 'dev',
     'execute' => array(
-      'cd /webserver/web_root/wxapi.dev.weistreet.com/; git reset --hard HEAD 2>&1; git clean -f -d 2>&1; git pull 2>&1; cd ./bin/; /webserver/apps/nodejs/bin/forever restart weistreet_dev'
+      'cd /webserver/web_root/wxapi.dev.weistreet.com/; git reset --hard HEAD 2>&1; git clean -f -d 2>&1; git pull 2>&1; /webserver/apps/nodejs/bin/forever restart weistreet_dev 2>&1'
     )
   );
 
@@ -30,6 +30,6 @@
     'repository' => 'weistreet_api',
     'branch' => 'master',
     'execute' => array(
-      'cd /webserver/web_root/wxapi.weistreet.com/; git reset --hard HEAD 2>&1; git clean -f -d 2>&1; git pull 2>&1; cd ./bin/; /webserver/apps/nodejs/bin/forever restart weistreet'
+      'cd /webserver/web_root/wxapi.weistreet.com/; git reset --hard HEAD 2>&1; git clean -f -d 2>&1; git pull 2>&1; /webserver/apps/nodejs/bin/forever restart weistreet 2>&1'
     )
   );
